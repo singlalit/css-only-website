@@ -1,0 +1,93 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* About Section */
+.about-container {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: #00eaff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.features, .techniques {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.features li, .techniques li {
+    margin-bottom: 8px;
+}
+
+/* Author Section */
+h3 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+h3 span {
+    color: #ffcc00;
+}
+
+h3 a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

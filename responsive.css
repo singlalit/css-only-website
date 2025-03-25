@@ -42,7 +42,7 @@ body {
 
 /* Flexbox Layout */
 .flexbox {
-    background: url('images/flexbox.jpg');
+    background-color: #ff5733;
 }
 .flexbox:hover {
     display: flex;
@@ -52,7 +52,7 @@ body {
 
 /* CSS Grid Layout */
 .grid-layout {
-    background: url('images/grid.jpg');
+    background-color: #3498db;
 }
 .grid-layout:hover {
     display: grid;
@@ -62,7 +62,7 @@ body {
 
 /* Media Queries */
 .media-queries {
-    background: url('images/media-queries.jpg');
+    background-color: #27ae60;
 }
 @media (max-width: 600px) {
     .media-queries {
@@ -73,7 +73,7 @@ body {
 
 /* Fluid Images */
 .fluid-images {
-    background: url('images/fluid-images.jpg');
+    background-color: #9b59b6;
 }
 .fluid-images img {
     width: 100%;
@@ -82,7 +82,7 @@ body {
 
 /* Viewport Units */
 .vw-vh {
-    background: url('images/viewport.jpg');
+    background-color: #f39c12;
 }
 .vw-vh:hover {
     width: 50vw;
@@ -91,7 +91,7 @@ body {
 
 /* Clamp Text */
 .clamp {
-    background: url('images/clamp.jpg');
+    background-color: #2c3e50;
 }
 .clamp:hover {
     font-size: clamp(1rem, 2.5vw, 2rem);
@@ -99,7 +99,7 @@ body {
 
 /* CSS Variables */
 .css-vars {
-    background: url('images/css-vars.jpg');
+    background-color: #8e44ad;
 }
 :root {
     --main-color: #ff5733;
@@ -110,7 +110,7 @@ body {
 
 /* Dark Mode */
 .dark-mode {
-    background: url('images/dark-mode.jpg');
+    background-color: #34495e;
 }
 @media (prefers-color-scheme: dark) {
     .dark-mode {
@@ -121,7 +121,7 @@ body {
 
 /* Aspect Ratio */
 .aspect-ratio {
-    background: url('images/aspect-ratio.jpg');
+    background-color: #e74c3c;
 }
 .aspect-ratio::before {
     content: "";
@@ -131,7 +131,7 @@ body {
 
 /* Responsive Buttons */
 .responsive-buttons {
-    background: url('images/buttons.jpg');
+    background-color: #16a085;
 }
 .responsive-buttons button {
     font-size: clamp(12px, 2vw, 24px);
