@@ -271,3 +271,111 @@ button {
 body {
     animation: gradientShift 6s infinite alternate ease-in-out;
 }
+/* 🔹 Base Styles (Mobile First Approach) */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* 🔹 Responsive Navigation (Hamburger Menu Effect) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        background: var(--primary-color);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* 🔹 Responsive Modal */
+@media (max-width: 600px) {
+    .modal-box {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* 🔹 Responsive Hero Section */
+@media (max-width: 992px) {
+    #home h2 {
+        font-size: 1.8rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+}
+
+/* 🔹 Responsive Buttons */
+@media (max-width: 500px) {
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* 🔥 Glassmorphism Effect for Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* 🔥 Smooth Hover Effects */
+button, .close-modal {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .close-modal:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔥 Border Animations */
+@keyframes borderGlow {
+    0% {
+        border-color: #4A90E2;
+    }
+    50% {
+        border-color: #FF3CAC;
+    }
+    100% {
+        border-color: #4A90E2;
+    }
+}
+
+.card {
+    border: 2px solid;
+    animation: borderGlow 4s infinite alternate ease-in-out;
+}
+
+/* 🔥 Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-top: 3px solid var(--secondary-color);
+}
